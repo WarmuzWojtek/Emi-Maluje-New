@@ -5,6 +5,7 @@ export const bigAnime = ()=>{
   const tittle1 = document.querySelector(".header__tittle1");
   const tittle2 = document.querySelector(".header__tittle2");
   const headerBtn = document.querySelector(".header__button");
+  const navi = document.querySelector('.navi');
   
   gsap.set(tittle1, {x: "-95vw"});
   gsap.set(tittle2, {opacity: 0});
@@ -14,5 +15,10 @@ export const bigAnime = ()=>{
   gsap.to(tittle1, {x:'5vw', duration:2});
   gsap.to(tittle2, {opacity:1, duration:3, delay:2});
   gsap.to(headerBtn, {opacity:1, duration:3, delay:4});
+
+  headerBtn.addEventListener('click', ()=>{
+    navi.style.transform="translateX(0)";
+  })
+
 }
 
