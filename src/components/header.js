@@ -6,6 +6,7 @@ export const bigAnime = ()=>{
   const tittle2 = document.querySelector(".header__tittle2");
   const headerBtn = document.querySelector(".header__button");
   const navi = document.querySelector('.navi');
+  const naviCloseBtn = document.querySelector('.navi__close');
   
   gsap.set(tittle1, {x: "-95vw"});
   gsap.set(tittle2, {opacity: 0});
@@ -18,6 +19,9 @@ export const bigAnime = ()=>{
 
   headerBtn.addEventListener('click', ()=>{
     navi.style.transform="translateX(0)";
+  });
+  naviCloseBtn.addEventListener('click', ()=>{
+    navi.style.transform="translateX(-100vw)";
   })
 
 }
