@@ -1,0 +1,91 @@
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0096c7;
+  overflow: hidden;
+  &__imgBigContainer {
+    position: absolute;
+    left: -25vw;
+    bottom: 0;
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+    opacity: 1;
+    z-index: 2;
+    & > img {
+      position: absolute;
+      bottom: 0;
+      width: 220%;
+      height: 70%;
+    }
+  }
+  &__imgSmallContainer {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    height: 60vh;
+    width: 30vw;
+    text-align: center;
+    z-index: 3;
+    & > img {
+      position: absolute;
+      bottom: 0;
+      width: 150%;
+      height: 50%;
+    }
+  }
+  &__imgBcgContainer {
+    position: absolute;
+    left: -50%;
+    top: -10%;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+    & > img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__tittle1 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-family: $tittleFont;
+    color: $lightColor;
+    text-align: center;
+    font-size: 42px;
+    z-index: 2;
+  }
+  &__tittle2 {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    // transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-family: $tittleFont;
+    color: $lightColor;
+    font-size: 16px;
+    opacity: 1;
+    z-index: 2;
+  }
+  &__button {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 45vw;
+    height: 7vh;
+    background-color: $darkColor;
+    color: $lightColor;
+    font-family: $tittleFont;
+    font-size: 1.1em;
+    // border-radius: 5px;
+    border: 2px solid $lightColor;
+    box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.7);
+    z-index: 2;
+  }
+}
