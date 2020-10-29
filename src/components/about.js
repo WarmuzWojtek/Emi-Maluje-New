@@ -1,4 +1,9 @@
 export const about = ()=>{
+  const about = document.querySelector('.about');
+  const aboutContainer = document.querySelector('.about__container');
+  let aboutContainerStyles = window.getComputedStyle(aboutContainer);
+  about.style.height = aboutContainerStyles.getPropertyValue('height');
+
   const image = document.querySelector('.about__img');
   let currentImage=0;
   const images=["/images/wiosna.jpg","/images/zpilka.jpg","/images/hallo.jpg","/images/kominek.jpg"];

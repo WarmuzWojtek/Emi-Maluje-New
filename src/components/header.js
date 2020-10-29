@@ -7,6 +7,7 @@ export const bigAnime = ()=>{
   const headerBtn = document.querySelector(".header__button");
   const navi = document.querySelector('.navi');
   const naviCloseBtn = document.querySelector('.navi__close');
+  const naviItemCover = document.querySelectorAll('.navi__listElement-cover');
   
   gsap.set(tittle1, {x: "-95vw"});
   gsap.set(tittle2, {opacity: 0});
@@ -18,10 +19,13 @@ export const bigAnime = ()=>{
   gsap.to(headerBtn, {opacity:1, duration:3, delay:4});
 
   headerBtn.addEventListener('click', ()=>{
-    navi.style.transform="translateX(0)";
+  navi.style.transform="translateX(0)";
+  gsap.to('.navi__listElement-cover',{x:'100%', duration:0.5,delay:0.3,ease:Power0,stagger:0.5});
+   
   });
   naviCloseBtn.addEventListener('click', ()=>{
     navi.style.transform="translateX(-100vw)";
+
   })
 
 }
