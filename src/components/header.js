@@ -20,11 +20,12 @@ export const bigAnime = ()=>{
 
   headerBtn.addEventListener('click', ()=>{
   navi.style.transform="translateX(0)";
-  gsap.to('.navi__listElement-cover',{x:'100%', duration:0.5,delay:0.3,ease:Power0,stagger:0.5});
+  gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.5,ease:Power0,stagger:0.5});
    
   });
   naviCloseBtn.addEventListener('click', ()=>{
     navi.style.transform="translateX(-100vw)";
+    gsap.to('.navi__listElement-cover',{x:0, duration:0.1,ease:Power0});
 
   })
 
