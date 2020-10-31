@@ -1,0 +1,33 @@
+.contact {
+  background-color: $mainColor;
+  &__tittle {
+    padding-top: 5vh;
+    font-family: $tittleFont;
+    color: $lightColor;
+    padding-left: 10vw;
+    padding: 5vh 0 5vh 10vw;
+  }
+  &__container {
+    width: 100%;
+    max-width: $maxWidth;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2em;
+  }
+  &__imgContainer {
+    padding: 5vw;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    padding: 5vw;
+    text-align: center;
+    font-family: $tittleFont;
+    color: $lightColor;
+    width: 100%;
+  }
+  &__content > a {
+    width: 100%;
+  }
+}
