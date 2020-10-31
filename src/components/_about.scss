@@ -6,7 +6,6 @@
   &__bcg {
     position: relative;
     width: 100vw;
-    // min-height: 100vh;
     height: 100%;
     overflow: hidden;
   }
@@ -49,7 +48,7 @@
     top: 0;
     left: 50%;
     width: 100%;
-    max-width: 1000px;
+    max-width: $maxWidth;
     transform: translateX(-50%);
   }
 }

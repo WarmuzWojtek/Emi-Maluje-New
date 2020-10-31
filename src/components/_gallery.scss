@@ -1,23 +1,25 @@
 .gallery {
-  width: 100%;
+  width: 100vw;
   background-color: $mainColor;
   &__container {
     width: 100%;
-    max-width: 1000px;
+    max-width: $maxWidth;
+    margin: 0 auto;
   }
   &__tittle {
     padding-top: 5vh;
     font-family: $tittleFont;
     color: $lightColor;
     padding-left: 10vw;
+    padding: 5vh 0 5vh 10vw;
   }
   &__paintings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 2em;
+    grid-gap: 1em;
   }
   &__img {
-    padding: 5vw;
+    padding: 2vw;
   }
   &__img img {
     display: block;

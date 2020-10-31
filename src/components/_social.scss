@@ -1,0 +1,18 @@
+.social {
+  background-color: $lightColor;
+  &__tittle {
+    padding-top: 5vh;
+    font-family: $tittleFont;
+    color: $darkColor;
+    padding-left: 10vw;
+    padding: 5vh 0 5vh 10vw;
+  }
+  &__container {
+    width: 100%;
+    max-width: $maxWidth;
+  }
+  &__svg {
+    width: 20vw;
+    height: 20vw;
+  }
+}
