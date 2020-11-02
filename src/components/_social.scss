@@ -1,16 +1,18 @@
 .social {
   background-color: $lightColor;
   &__tittle {
-    padding-top: 5vh;
     font-family: $tittleFont;
     color: $darkColor;
-    padding-left: 10vw;
+    opacity: 0;
+    transform: translateX(-10%);
     padding: 5vh 0 5vh 10vw;
   }
   &__container {
     width: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
+    transform: translateX(10%);
+    opacity: 0;
   }
   &__tiktok {
     display: flex;
@@ -28,7 +30,7 @@
   }
   &__paragraph {
     width: 70%;
-    font-family: $tittleFont;
+    font-family: $contentFont;
     font-size: 0.7rem;
     padding: 10vw 2vw 5vw 5vw;
     text-align: justify;

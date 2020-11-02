@@ -3,6 +3,23 @@ export const about = ()=>{
   const aboutContainer = document.querySelector('.about__container');
   let aboutContainerStyles = window.getComputedStyle(aboutContainer);
   about.style.height = aboutContainerStyles.getPropertyValue('height');
+  
+  gsap.to(".about__tittle",{
+    scrollTrigger:{
+    trigger:".about__tittle",
+    toggleActions:"restart none none none"},
+    x:0,
+    opacity:1,
+    duration:0.5,
+  });
+  gsap.to(".about__text",{
+    scrollTrigger:{
+    trigger:".about__text",
+  toggleActions:"restart none none none"},
+    x:0,
+    opacity:1,
+    duration:0.5,
+  });
 
   const image = document.querySelector('.about__img');
   let currentImage=0;

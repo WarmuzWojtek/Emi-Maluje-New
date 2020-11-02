@@ -6,6 +6,8 @@
     color: $lightColor;
     padding-left: 10vw;
     padding: 5vh 0 5vh 10vw;
+    opacity: 0;
+    transform: translateX(-10%);
   }
   &__container {
     width: 100%;
@@ -16,6 +18,7 @@
   }
   &__imgContainer {
     padding: 5vw;
+    opacity: 0;
   }
   &__img {
     width: 100%;
@@ -26,8 +29,11 @@
     font-family: $tittleFont;
     color: $lightColor;
     width: 100%;
+    transform: translateX(10%);
+    opacity: 0;
   }
   &__content > a {
+    display: block;
     width: 100%;
   }
 }

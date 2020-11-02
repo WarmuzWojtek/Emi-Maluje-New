@@ -7,11 +7,12 @@
     margin: 0 auto;
   }
   &__tittle {
-    padding-top: 5vh;
     font-family: $tittleFont;
     color: $lightColor;
-    padding-left: 10vw;
+    font-size: 2rem;
     padding: 5vh 0 5vh 10vw;
+    opacity: 0;
+    transform: translateX(-10%);
   }
   &__paintings {
     display: grid;

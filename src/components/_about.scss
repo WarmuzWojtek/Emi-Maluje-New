@@ -22,6 +22,9 @@
     color: $darkColor;
     margin: 5vh 0;
     padding-left: 10vw;
+    opacity: 0;
+    transform: translateX(-10%);
+    font-size: 1.5rem;
   }
   &__content {
     display: grid;
@@ -29,11 +32,13 @@
     grid-gap: 2em;
   }
   &__text {
-    font-family: $tittleFont;
+    font-family: $contentFont;
     padding: 0 5vw 5vw 5vw;
     font-size: 1.2em;
     color: $darkColor;
     text-align: center;
+    transform: translateX(10%);
+    opacity: 0;
   }
   &__images {
     padding: 0 5vw 5vw 5vw;
