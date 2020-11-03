@@ -7,7 +7,9 @@ export const about = ()=>{
   gsap.to(".about__tittle",{
     scrollTrigger:{
     trigger:".about__tittle",
-    toggleActions:"restart none none none"},
+    start:"top 80%",
+    end:"top top",
+    toggleActions:"restart pause pause reverse"},
     x:0,
     opacity:1,
     duration:0.5,
@@ -15,7 +17,8 @@ export const about = ()=>{
   gsap.to(".about__text",{
     scrollTrigger:{
     trigger:".about__text",
-  toggleActions:"restart none none none"},
+  toggleActions:"restart pause pause reverse",
+},
     x:0,
     opacity:1,
     duration:0.5,

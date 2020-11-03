@@ -2,7 +2,9 @@ export const social=()=>{
   gsap.to(".social__tittle",{
     scrollTrigger:{
     trigger:".social__tittle",
-    toggleActions:"restart none none none"},
+    start:"top 80%",
+    end:"top top",
+    toggleActions:"restart pause pause reverse"},
     x:0,
     opacity:1,
     duration:0.5,
@@ -10,7 +12,9 @@ export const social=()=>{
   gsap.to(".social__container",{
     scrollTrigger:{
     trigger:".social__container",
-  toggleActions:"restart none none none"},
+    start:"top 80%",
+    end:"top top",
+  toggleActions:"restart pause pause reverse"},
     x:0,
     opacity:1,
     duration:0.5,
