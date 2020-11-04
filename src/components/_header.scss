@@ -10,33 +10,31 @@
   overflow: hidden;
   &__imgBigContainer {
     position: absolute;
-    left: -25vw;
+    left: -50vw;
     bottom: 0;
-    height: 100vh;
-    width: 50vw;
+    height: auto;
+    width: 100%;
     text-align: center;
     opacity: 1;
     z-index: 2;
     & > img {
       position: absolute;
       bottom: 0;
-      width: 220%;
-      height: 70%;
+      max-width: 100%;
     }
   }
   &__imgSmallContainer {
     position: absolute;
     left: 40%;
     bottom: 0;
-    height: 60vh;
-    width: 30vw;
+    height: auto;
+    width: 40%;
     text-align: center;
     z-index: 3;
     & > img {
       position: absolute;
       bottom: 0;
-      width: 150%;
-      height: 50%;
+      max-width: 100%;
     }
   }
   &__imgBcgContainer {
@@ -57,7 +55,7 @@
   &__tittle1 {
     position: absolute;
     left: 5%;
-    top: 5%;
+    top: 10%;
     font-family: $tittleFont;
     color: $lightColor;
     text-align: center;
@@ -67,7 +65,7 @@
   &__tittle2 {
     position: absolute;
     left: 20%;
-    top: 15%;
+    top: 20%;
     // transform: translateX(-50%);
     width: 100%;
     text-align: center;
@@ -80,7 +78,7 @@
   &__button {
     position: absolute;
     left: 5%;
-    top: 25%;
+    top: 30%;
     width: 45vw;
     height: 7vh;
     background-color: $darkColor;
@@ -95,6 +93,21 @@
     &:hover {
       background-color: $mainColor;
       color: $lightColor;
+    }
+  }
+  &__burger {
+    position: fixed;
+    width: 20vw;
+    height: 20vw;
+    top: 0;
+    left: 80vw;
+    z-index: 5;
+    & > i {
+      display: block;
+      color: $darkColor;
+      text-align: center;
+      line-height: 20vw;
+      font-size: 3rem;
     }
   }
 }

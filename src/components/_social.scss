@@ -31,9 +31,10 @@
   &__paragraph {
     width: 70%;
     font-family: $contentFont;
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 10vw 2vw 5vw 5vw;
     text-align: justify;
+    color: $darkColor;
   }
 }
 .circle1 {

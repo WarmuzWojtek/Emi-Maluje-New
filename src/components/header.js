@@ -6,8 +6,10 @@ export const bigAnime = ()=>{
   const tittle2 = document.querySelector(".header__tittle2");
   const headerBtn = document.querySelector(".header__button");
   const navi = document.querySelector('.navi');
-  const naviCloseBtn = document.querySelector('.navi__close');
+  // const naviCloseBtn = document.querySelector('.navi__close');
   const naviItemCover = document.querySelectorAll('.navi__listElement-cover');
+  const burger = document.querySelector('.header__burger');
+  
   
   gsap.set(tittle1, {x: "-95vw"});
   gsap.set(tittle2, {opacity: 0});
@@ -20,14 +22,25 @@ export const bigAnime = ()=>{
 
   headerBtn.addEventListener('click', ()=>{
   navi.style.transform="translateX(0)";
-  gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.5,ease:Power0,stagger:0.5});
-   
+  gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.25,ease:Power0,stagger:0.25});
+  burger.innerHTML='<i class="fas fa-times"></i>' 
   });
-  naviCloseBtn.addEventListener('click', ()=>{
-    navi.style.transform="translateX(-100vw)";
+  burger.addEventListener('click', ()=>{
+    if(burger.innerHTML==='<i class="fas fa-bars"></i>'){
+    navi.style.transform="translateX(0)";
+    gsap.to(window,{duration:0.1, scrollTo:{y:"#section1"}})
+    gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.25,ease:Power0,stagger:0.25});
+    burger.innerHTML='<i class="fas fa-times"></i>';}else{
+      navi.style.transform="translateX(-100vw)";
     gsap.to('.navi__listElement-cover',{x:0, duration:0.1,ease:Power0});
+    burger.innerHTML='<i class="fas fa-bars"></i>';
+    }
+    });
+  // naviCloseBtn.addEventListener('click', ()=>{
+  //   navi.style.transform="translateX(-100vw)";
+  //   gsap.to('.navi__listElement-cover',{x:0, duration:0.1,ease:Power0});
 
-  })
+  // })
 
 }
 

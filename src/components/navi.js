@@ -4,8 +4,10 @@ export const navi=()=>{
   const section3 = document.querySelector(".navi__nav-link-3");
   const section4 = document.querySelector(".navi__nav-link-4");
   const section5 = document.querySelector(".navi__nav-link-5");
+  const burger = document.querySelector('.header__burger');
   section1.addEventListener('click',(e)=>{
     e.preventDefault();
+    burger.innerHTML='<i class="fas fa-bars"></i>';
     const tl = gsap.timeline();
     tl.to(window,{duration:0.1, scrollTo:{y:"#section1"}})
     .to('.navi',{x:"-100vw",duration:0.1})
@@ -13,6 +15,7 @@ export const navi=()=>{
   })
   section2.addEventListener('click',(e)=>{
     e.preventDefault();
+    burger.innerHTML='<i class="fas fa-bars"></i>';
     const tl = gsap.timeline();
     tl.to(window,{duration:1, scrollTo:{y:"#section2"}})
     .to('.navi',{x:"-100vw",duration:0.1})
@@ -20,6 +23,7 @@ export const navi=()=>{
   })
   section3.addEventListener('click',(e)=>{
     e.preventDefault();
+    burger.innerHTML='<i class="fas fa-bars"></i>';
     const tl = gsap.timeline();
     tl.to(window,{duration:1, scrollTo:{y:"#section3"}})
     .to('.navi',{x:"-100vw",duration:0.1})
@@ -27,6 +31,7 @@ export const navi=()=>{
   })
   section4.addEventListener('click',(e)=>{
     e.preventDefault();
+    burger.innerHTML='<i class="fas fa-bars"></i>';
     const tl = gsap.timeline();
     tl.to(window,{duration:1, scrollTo:{y:"#section4"}})
     .to('.navi',{x:"-100vw",duration:0.1})
@@ -34,6 +39,7 @@ export const navi=()=>{
   })
   section5.addEventListener('click',(e)=>{
     e.preventDefault();
+    burger.innerHTML='<i class="fas fa-bars"></i>';
     const tl = gsap.timeline();
     tl.to(window,{duration:1, scrollTo:{y:"#section5"}})
     .to('.navi',{x:"-100vw",duration:0.1})
