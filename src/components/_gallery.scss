@@ -20,7 +20,12 @@
     grid-gap: 1em;
   }
   &__img {
-    padding: 2vw;
+    padding: 0 4vw 4vw 4vw;
+    text-decoration: none;
+    text-align: center;
+    color: $lightColor;
+    font-family: $contentFont;
+    font-size: 1.5rem;
   }
   &__img img {
     display: block;
