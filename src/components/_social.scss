@@ -6,6 +6,13 @@
     opacity: 0;
     transform: translateX(-10%);
     padding: 5vh 0 5vh 10vw;
+    font-size: $tittleSize;
+    @include mediaq(smartphone) {
+      font-size: $tittleSize * 1.2;
+    }
+    @include mediaq(smartphone-large) {
+      font-size: $tittleSize * 1.5;
+    }
   }
   &__container {
     width: 100%;
@@ -31,10 +38,16 @@
   &__paragraph {
     width: 70%;
     font-family: $contentFont;
-    font-size: 1rem;
+    font-size: $contentSize * 0.8;
     padding: 10vw 2vw 5vw 5vw;
     text-align: justify;
     color: $darkColor;
+    @include mediaq(smartphone) {
+      font-size: $contentSize;
+    }
+    @include mediaq(smartphone-large) {
+      font-size: $contentSize * 1.1;
+    }
   }
 }
 .circle1 {

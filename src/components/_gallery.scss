@@ -9,15 +9,21 @@
   &__tittle {
     font-family: $tittleFont;
     color: $lightColor;
-    font-size: 2rem;
+    font-size: $tittleSize;
     padding: 5vh 0 5vh 10vw;
     opacity: 0;
     transform: translateX(-10%);
+    @include mediaq(smartphone) {
+      font-size: $tittleSize * 1.2;
+    }
+    @include mediaq(smartphone-large) {
+      font-size: $tittleSize * 1.5;
+    }
   }
   &__paintings {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
   &__img {
     padding: 0 4vw 4vw 4vw;

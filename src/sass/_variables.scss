@@ -4,3 +4,40 @@ $mainColor: #0096c7;
 $darkColor: #03045e;
 $lightColor: #caf0f8;
 $maxWidth: 1000px;
+$tittleSize: 2rem;
+$contentSize: 1.2rem;
+
+$breakpoints: (
+  smartphone: (
+    min-width: 400px,
+  ),
+  smartphone-large: (
+    min-width: 640px,
+  ),
+  tablet: (
+    min-width: 800px,
+  ),
+  tablet-large: (
+    min-width: 1024px,
+  ),
+  desktop-small: (
+    min-width: 1280px,
+  ),
+  desktop-medium: (
+    min-width: 1600px,
+  ),
+  desktop-large: (
+    min-width: 1900px,
+  ),
+);
+
+@mixin mediaq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - nie ma takiej wielkości';
+  }
+}
