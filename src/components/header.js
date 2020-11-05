@@ -28,7 +28,7 @@ export const bigAnime = ()=>{
   burger.addEventListener('click', ()=>{
     if(burger.innerHTML==='<i class="fas fa-bars"></i>'){
     navi.style.transform="translateX(0)";
-    gsap.to(window,{duration:0.1, scrollTo:{y:"#section1"}})
+    // gsap.to(window,{duration:0.1, scrollTo:{y:"#section1"}})
     gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.25,ease:Power0,stagger:0.25});
     burger.innerHTML='<i class="fas fa-times"></i>';}else{
       navi.style.transform="translateX(-100vw)";
@@ -36,11 +36,7 @@ export const bigAnime = ()=>{
     burger.innerHTML='<i class="fas fa-bars"></i>';
     }
     });
-  // naviCloseBtn.addEventListener('click', ()=>{
-  //   navi.style.transform="translateX(-100vw)";
-  //   gsap.to('.navi__listElement-cover',{x:0, duration:0.1,ease:Power0});
-
-  // })
+ 
 
 }
 
