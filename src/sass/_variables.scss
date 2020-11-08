@@ -29,6 +29,9 @@ $breakpoints: (
   desktop-large: (
     min-width: 1900px,
   ),
+  landscape: (
+    orientation: landscape,
+  ),
 );
 
 @mixin mediaq($breakpoint) {

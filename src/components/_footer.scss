@@ -6,4 +6,8 @@
   font-size: $contentSize;
   line-height: 5vh;
   padding-left: 5vw;
+  @include mediaq(landscape) {
+    height: 15vh;
+    line-height: 15vh;
+  }
 }
