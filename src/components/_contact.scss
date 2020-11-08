@@ -13,6 +13,7 @@
     opacity: 0;
     transform: translateX(-10%);
     font-size: $tittleSize;
+    text-decoration: underline 3px;
     @include mediaq(smartphone) {
       font-size: $tittleSize * 1.2;
     }

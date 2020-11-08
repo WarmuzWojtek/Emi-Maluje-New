@@ -10,14 +10,31 @@
     font-family: $tittleFont;
     color: $lightColor;
     font-size: $tittleSize;
-    padding: 5vh 0 5vh 10vw;
+    padding: 5vh 0 2vh 10vw;
     opacity: 0;
     transform: translateX(-10%);
+    text-decoration: underline 3px;
     @include mediaq(smartphone) {
       font-size: $tittleSize * 1.2;
     }
     @include mediaq(smartphone-large) {
       font-size: $tittleSize * 1.5;
+    }
+  }
+  &__description {
+    font-family: $contentFont;
+    color: $lightColor;
+    font-size: $contentSize * 1.1;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5vw 5vh 5vw;
+    transform: translateX(10%);
+    opacity: 0;
+    @include mediaq(smartphone) {
+      font-size: $contentSize * 1.1;
+    }
+    @include mediaq(smartphone-large) {
+      font-size: $contentSize * 1.3;
     }
   }
   &__paintings {
@@ -38,5 +55,8 @@
     width: 100%;
     height: auto;
     box-shadow: 0 0 5px 2px $lightColor;
+    @include mediaq(smartphone-large) {
+      box-shadow: 0 0 10px 5px $lightColor;
+    }
   }
 }

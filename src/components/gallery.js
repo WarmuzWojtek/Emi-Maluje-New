@@ -9,4 +9,13 @@ export const gallery=()=>{
     opacity:1,
     duration:0.5,
   });
+  gsap.to(".gallery__description",{
+    scrollTrigger:{
+    trigger:".gallery__description",
+  toggleActions:"restart pause pause reverse",
+},
+    x:0,
+    opacity:1,
+    duration:0.5,
+  });
 };

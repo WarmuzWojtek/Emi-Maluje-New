@@ -7,6 +7,7 @@
     transform: translateX(-10%);
     padding: 5vh 0 5vh 10vw;
     font-size: $tittleSize;
+    text-decoration: underline 3px;
     @include mediaq(smartphone) {
       font-size: $tittleSize * 1.2;
     }
@@ -38,15 +39,15 @@
   &__paragraph {
     width: 70%;
     font-family: $contentFont;
-    font-size: $contentSize * 0.8;
+    font-size: $contentSize;
     padding: 10vw 2vw 5vw 5vw;
     text-align: justify;
     color: $darkColor;
     @include mediaq(smartphone) {
-      font-size: $contentSize;
+      font-size: $contentSize * 1.1;
     }
     @include mediaq(smartphone-large) {
-      font-size: $contentSize * 1.1;
+      font-size: $contentSize * 1.3;
     }
   }
 }
