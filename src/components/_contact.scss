@@ -5,6 +5,8 @@
   background-size: cover;
   overflow: hidden;
   &__tittle {
+    max-width: $maxWidth;
+    margin: 0 auto;
     font-family: $tittleFont;
     color: $lightColor;
     padding: 5vh 0 5vh 10vw;
@@ -42,7 +44,9 @@
     opacity: 0;
   }
   &__img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
   }
   &__content {
     align-self: center;
@@ -56,11 +60,14 @@
     transform: translateX(10%);
     opacity: 0;
     @include mediaq(smartphone-large) {
-      font-size: $contentSize * 1.5;
-      padding: 0 5vw 5vw 5vw;
+      font-size: $contentSize * 1.1;
+      padding: 0 5vw 5vw 15vw;
     }
     @include mediaq(tablet and landscape) {
       font-size: $contentSize * 1.2;
+    }
+    @include mediaq(tablet-large) {
+      font-size: $contentSize * 1.5;
     }
   }
   &__content > a {

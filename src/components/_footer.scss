@@ -1,13 +1,21 @@
 .footer {
-  height: 5vh;
+  height: 7vh;
   background-color: $lightColor;
   color: $darkColor;
   font-family: $contentFont;
   font-size: $contentSize;
-  line-height: 5vh;
+  line-height: 7vh;
   padding-left: 5vw;
+  @include mediaq(smartphone-large) {
+    height: 5vh;
+    line-height: 5vh;
+  }
   @include mediaq(landscape) {
     height: 15vh;
     line-height: 15vh;
+  }
+  @include mediaq(tablet-large) {
+    height: 7vh;
+    line-height: 7vh;
   }
 }

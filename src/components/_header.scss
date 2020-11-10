@@ -89,12 +89,13 @@
       left: 35%;
     }
     @include mediaq(smartphone-large and landscape) {
-      left: 35%;
       font-size: $tittleSize * 1.4;
     }
     @include mediaq(tablet and landscape) {
-      left: 35%;
       font-size: $tittleSize * 1.6;
+    }
+    @include mediaq(tablet-large) {
+      font-size: $tittleSize * 2.5;
     }
   }
   &__tittle2 {
@@ -120,6 +121,9 @@
     }
     @include mediaq(smartphone-large and landscape) {
       font-size: $contentSize;
+    }
+    @include mediaq(tablet-large) {
+      font-size: $contentSize * 1.5;
     }
   }
   &__button {
@@ -152,6 +156,12 @@
       width: 25vw;
       height: 10vh;
       font-size: $contentSize * 0.8;
+    }
+    @include mediaq(tablet-large) {
+      width: 20vw;
+      height: 8vh;
+      left: 10%;
+      font-size: $contentSize;
     }
   }
   &__burger {
