@@ -58,6 +58,10 @@
     @include mediaq(tablet-large) {
       padding: 10vw 2vw 0 5vw;
     }
+    @include mediaq(desktop-small) {
+      font-size: $contentSize * 1.3;
+      padding: 5vw 2vw 0 5vw;
+    }
   }
   &__link {
     display: block;
@@ -91,6 +95,11 @@
       width: 15vw;
       height: 5vw;
       line-height: 5vw;
+      font-size: $contentSize * 1.2;
+    }
+    @include mediaq(desktop-small) {
+      height: 4vw;
+      line-height: 4vw;
       font-size: $contentSize * 1.2;
     }
     &:hover {

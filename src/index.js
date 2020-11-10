@@ -9,13 +9,19 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
 
-window.addEventListener('DOMContentLoaded', bigAnime);
-window.addEventListener('DOMContentLoaded', about);
-window.addEventListener('DOMContentLoaded', social);
-window.addEventListener('DOMContentLoaded', gallery);
-window.addEventListener('DOMContentLoaded', contact);
-window.addEventListener('DOMContentLoaded', navi);
+// window.addEventListener('DOMContentLoaded', bigAnime);
+// window.addEventListener('DOMContentLoaded', about);
+// window.addEventListener('DOMContentLoaded', social);
+// window.addEventListener('DOMContentLoaded', gallery);
+// window.addEventListener('DOMContentLoaded', contact);
+// window.addEventListener('DOMContentLoaded', navi);
 
+bigAnime();
+about();
+social();
+gallery();
+contact();
+navi();
 
 
 
