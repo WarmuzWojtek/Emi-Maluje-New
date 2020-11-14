@@ -6,7 +6,6 @@ export const bigAnime = ()=>{
   const tittle2 = document.querySelector(".header__tittle2");
   const headerBtn = document.querySelector(".header__button");
   const navi = document.querySelector('.navi');
-  // const naviCloseBtn = document.querySelector('.navi__close');
   const naviItemCover = document.querySelectorAll('.navi__listElement-cover');
   const burger = document.querySelector('.header__burger');
   
@@ -20,17 +19,29 @@ export const bigAnime = ()=>{
   gsap.to(tittle2, {opacity:1, duration:3, delay:2});
   gsap.to(headerBtn, {opacity:1, duration:3, delay:4});
 
+
+
   headerBtn.addEventListener('click', ()=>{
+  if(window.innerWidth<1280){
+  headerBtn.style.display="none";
   navi.style.transform="translateX(0)";
   gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.25,ease:Power0,stagger:0.25});
-  burger.innerHTML='<i class="fas fa-times"></i>' 
+  burger.innerHTML='<i class="fas fa-times"></i>';}else{
+  headerBtn.style.display="none";
+  gsap.fromTo('.navi__listElement',{opacity:0},{opacity:1, duration:1,ease:Power0,stagger:0.5});
+  navi.style.zIndex=6;
+  } 
   });
+
+
+
   burger.addEventListener('click', ()=>{
     if(burger.innerHTML==='<i class="fas fa-bars"></i>'){
+    headerBtn.style.display="none";
     navi.style.transform="translateX(0)";
-    // gsap.to(window,{duration:0.1, scrollTo:{y:"#section1"}})
     gsap.to('.navi__listElement-cover',{x:'-100%', duration:0.25,ease:Power0,stagger:0.25});
     burger.innerHTML='<i class="fas fa-times"></i>';}else{
+      headerBtn.style.display="block";
       navi.style.transform="translateX(-100vw)";
     gsap.to('.navi__listElement-cover',{x:0, duration:0.1,ease:Power0});
     burger.innerHTML='<i class="fas fa-bars"></i>';
