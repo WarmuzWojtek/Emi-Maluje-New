@@ -48,12 +48,12 @@
   }
   &__imgBcgContainer {
     position: absolute;
-    left: -50%;
-    top: -10%;
+    left: 0;
+    top: 10%;
     height: 100vh;
     width: 100vw;
     text-align: center;
-    z-index: 1;
+    // z-index: 1;
     overflow: hidden;
     @include mediaq(landscape) {
       width: 100%;
@@ -67,8 +67,9 @@
     & > img {
       position: absolute;
       top: 0;
+      left: 0%;
       width: 100%;
-      height: 100%;
+      height: auto;
       @include mediaq(landscape) {
         top: -20%;
         width: 100%;
