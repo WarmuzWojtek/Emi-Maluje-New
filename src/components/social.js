@@ -19,6 +19,36 @@ export const social=()=>{
     opacity:1,
     duration:0.5,
   });
+  gsap.to(".social__svgCont",{
+    scrollTrigger:{
+    trigger:".social__svgCont",
+    start:"top 60%",
+    end:"top top",
+  toggleActions:"restart pause pause reverse"},
+    x:"-=60%",
+    duration:0.5,
+  });
+  gsap.to(".social__paragraph",{
+    scrollTrigger:{
+    trigger:".social__svgCont",
+    start:"top 60%",
+    end:"top top",
+  toggleActions:"restart pause pause reverse"},
+    x:"+=30%",
+    backgroundColor:"rgba(3, 4, 94, 0.6)",
+    duration:0.5,
+  });
+  gsap.to(".social__svgCont",{
+    scrollTrigger:{
+    trigger:".social__svgCont",
+    start:"top 60%",
+    end:"top top",
+  toggleActions:"restart pause pause reverse"},
+    y:"-=30%",
+    backgroundColor: "rgba(0, 150, 199, 0.5)",
+    duration:1.5,
+  });
+
 
 
 const circles = document.querySelectorAll('.circle1');
