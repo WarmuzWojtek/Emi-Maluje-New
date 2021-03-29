@@ -1,8 +1,8 @@
 export const about = ()=>{
   const about = document.querySelector('.about');
   const aboutContainer = document.querySelector('.about__container');
-  let aboutContainerStyles = window.getComputedStyle(aboutContainer);
-  about.style.height = aboutContainerStyles.getPropertyValue('height');
+  // let aboutContainerStyles = window.getComputedStyle(aboutContainer);
+  // about.style.height = aboutContainerStyles.getPropertyValue('height');
   
   gsap.to(".about__tittle",{
     scrollTrigger:{
@@ -26,7 +26,7 @@ export const about = ()=>{
 
   const image = document.querySelector('.about__img');
   let currentImage=0;
-  const images=["/images/wiosna.jpg","/images/zpilka.jpg","/images/hallo.jpg","/images/kominek.jpg"];
+  const images=["images/wiosna.jpg","images/zpilka.jpg","images/hallo.jpg","images/kominek.jpg"];
   const imgChange=()=>{    
 image.setAttribute("src",images[currentImage]);
 if(currentImage<images.length-1){
