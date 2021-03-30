@@ -8,7 +8,7 @@ Live demo: https://dazzling-wright-24be71.netlify.app/
 
 Technologies and tool used in projest:
 - JavaScript
-- SCSS
+- SASS
 - Webpack
 - GSAP
 - LightBox
