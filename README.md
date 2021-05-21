@@ -6,7 +6,7 @@ Portfolio site made for my daughter
 
 Live demo: https://dazzling-wright-24be71.netlify.app/
 
-Technologies and tool used in projest:
+Technologies and tool used in the project:
 - JavaScript
 - SASS
 - Webpack
